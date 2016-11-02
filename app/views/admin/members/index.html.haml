@@ -1,0 +1,37 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-10
+    %h2 members
+    %ol.breadcrumb
+      %li= link_to "トップ", admin_members_path
+      %li.active
+        %strong 一覧
+  .col-lg-2
+.wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .ibox.float-e-margins
+      .ibox-title
+        %h5 member
+      .ibox-content
+        %table.table.table-align-middle
+          %thead
+            %tr
+              %th id
+              %th name
+              %th year
+              %th intro
+              %th depertment
+              %th undergraduate
+              %th position
+          %tbody
+            - @members.each do |member|
+              %tr
+                %td= member.id
+                %td= member.name
+                %td= member.year
+                %td= member.introduce
+                %td= member.depertment
+                %td= member.undergraduate
+                %td= member.position
+                %td
+                  = link_to "編集", edit_admin_member_path(member), class: "btn btn-white btn-sm"
+                  = link_to "削除", admin_member_path(member), method: :delete, data: { confirm: 'Confirm?' }, class: "btn btn-danger btn-sm"

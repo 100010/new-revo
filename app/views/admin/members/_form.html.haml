@@ -1,0 +1,24 @@
+= form_for [:admin, @member],  html: {role: 'form', class: "form-horizontal"} do |f|
+  = f.error_messages!
+  .form-group
+    = f.label :name, class: "col-sm-3 control-label"
+    .col-sm-9= f.text_area :name, class: "form-control", required: true
+  .form-group
+    = f.label :introduce, class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.text_area :introduce, class: "form-control", size: "2x15", required: true
+  .form-group
+    = f.label :depertment, class: "col-sm-3 control-label"
+    .col-sm-9= f.select :depertment, Member::AVAILABLE_DEPERTMENT_HASH.keys, {}, class: "form-control", required: true
+  .form-group
+    = f.label :undergraduate, class: "col-sm-3 control-label"
+    .col-sm-9= f.select :undergraduate, Member::AVAILABLE_UNDERGRADUATE_HASH.keys, {}, class: "form-control", required: true
+  .form-group
+    = f.label :position, class: "col-sm-3 control-label"
+    .col-sm-9= f.select :position, Member::AVAILABLE_POSITION_HASH.keys, {}, class: "form-control", required: true
+  .form-group
+    = f.label :year, class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.number_field :year, class: "form-control", required: true
+  .form-group
+    .col-sm-4.col-sm-offset-3= f.submit "Done", class: "btn btn-primary"

@@ -1,0 +1,15 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-10
+    %h2 member
+    %ol.breadcrumb
+      %li= link_to "Top", admin_members_path
+      %li.active
+        %strong 追加
+  .col-lg-2
+.wrapper.wrapper-content
+  .row
+    .ibox.float-e-margins
+      .ibox-title
+        %h5 member
+      .ibox-content
+        = render 'form', url: admin_members_path

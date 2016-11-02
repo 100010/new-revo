@@ -1,0 +1,31 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-10
+    %h2 schedule
+    %ol.breadcrumb
+      %li= link_to "トップ", admin_schedules_path
+      %li.active
+        %strong 一覧
+  .col-lg-2
+.wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .ibox.float-e-margins
+      .ibox-title
+        %h5 schedule
+      .ibox-content
+        %table.table.table-align-middle
+          %thead
+            %tr
+              %th id
+              %th title
+              %th month
+              %th day
+          %tbody
+            - @schedules.each do |schedule|
+              %tr
+                %td= schedule.id
+                %td= schedule.title
+                %td= schedule.month
+                %td= schedule.day
+                %td
+                  = link_to "編集", edit_admin_schedule_path(schedule), class: "btn btn-white btn-sm"
+                  = link_to "削除", admin_schedule_path(schedule), method: :delete, data: { confirm: 'Confirm?' }, class: "btn btn-danger btn-sm"
