@@ -11,14 +11,8 @@
     = f.label :depertment, class: "col-sm-3 control-label"
     .col-sm-9= f.select :depertment, Member::AVAILABLE_DEPERTMENT_HASH.keys, {}, class: "form-control", required: true
   .form-group
-    = f.label :undergraduate, class: "col-sm-3 control-label"
-    .col-sm-9= f.select :undergraduate, Member::AVAILABLE_UNDERGRADUATE_HASH.keys, {}, class: "form-control", required: true
-  .form-group
-    = f.label :position, class: "col-sm-3 control-label"
-    .col-sm-9= f.select :position, Member::AVAILABLE_POSITION_HASH.keys, {}, class: "form-control", required: true
-  .form-group
-    = f.label :year, class: "col-sm-3 control-label"
+    = f.label :profile_image, class: "col-sm-3 control-label"
     .col-sm-9
-      = f.number_field :year, class: "form-control", required: true
+      = f.file_field :profile_image, class: "form-control", size: "2x15", required: true
   .form-group
     .col-sm-4.col-sm-offset-3= f.submit "Done", class: "btn btn-primary"

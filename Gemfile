@@ -9,6 +9,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem "haml-rails"
 
+#for image uploader
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'mini_magick'
 
 #for notification
 gem 'exception_notification'

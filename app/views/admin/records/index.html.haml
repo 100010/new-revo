@@ -1,0 +1,31 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-10
+    %h2 records
+    %ol.breadcrumb
+      %li= link_to "トップ", admin_records_path
+      %li.active
+        %strong 一覧
+  .col-lg-2
+.wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .ibox.float-e-margins
+      .ibox-title
+        %h5 records
+      .ibox-content
+        %table.table.table-align-middle
+          %thead
+            %tr
+              %th id
+              %th title
+              %th image
+              %th created_at
+          %tbody
+            - @records.each do |record|
+              %tr
+                %td= record.id
+                %td= record.title
+                %td= image_tag record.image_url
+                %td= record.created_at
+                %td
+                  = link_to "編集", edit_admin_record_path(record), class: "btn btn-white btn-sm"
+                  = link_to "削除", admin_record_path(record), method: :delete, data: { confirm: 'Confirm?' }, class: "btn btn-danger btn-sm"

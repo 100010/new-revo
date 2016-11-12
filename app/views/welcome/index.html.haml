@@ -3,52 +3,21 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width , minimum-scale=1, maximum-scale=1", :name => "viewport"}/
-    / links
-    %link#contact-form-7-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.3", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %link#wp-pagenavi-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery.js?ver=1.11.2", :type => "text/javascript"}
-    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1", :type => "text/javascript"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,600italic,700italic|Bitter:400,400italic", :rel => "stylesheet", :type => "text/css"}/
     :css
       .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
-    / All in One SEO Pack 2.2.4 by Michael Torbert of Semper Fi Web Design[,]
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :itemprop => "description", :name => "description"}/
-    %link{:href => "http://reissuerecords.net/page/2/", :rel => "next"}/
-    %link{:href => "http://reissuerecords.net/", :rel => "canonical"}/
-    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:title"}/
-    %meta{:content => "blog", :property => "og:type"}/
-    %meta{:content => "http://reissuerecords.net/", :property => "og:url"}/
-    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :property => "og:image"}/
-    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:site_name"}/
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :property => "og:description"}/
-    %meta{:content => "summary", :name => "twitter:card"}/
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :name => "twitter:description"}/
-    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :itemprop => "image"}/
-    / /all in one seo pack
-    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
-    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/css/style.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,600italic,700italic|Bitter:400,400italic", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/js/common.js"}
-    / close.links
-    %title 米津玄師 official site「REISSUE RECORDS」
-    :javascript
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-57997505-1', 'auto');
-      ga('send', 'pageview');
+    %title revolution
   %body{"data-dir" => "http://reissuerecords.net/rr/wp-content/themes/rr", "data-uri" => "http://reissuerecords.net"}
     .all
       %header
         .header
           %ul.nav_left.nav.cf
             %li
-              %a.p{:href => "http://reissuerecords.net/news/"} NEWS
+              = link_to "" do
+                %p MEMBER
             %li
-              %a.p{:href => "http://reissuerecords.net/media/"} MEDIA
-            %li
-              %a.p{:href => "http://reissuerecords.net/live/"} LIVE
-          / .nav_left
+              = link_to "" do
+                %p SCHEDULE
           .rand_wrap_fix
             %a.p.rand_body.rand_body_show.rand_body_float{:href => "http://reissuerecords.net/"}
               %span.rand_img

@@ -31,3 +31,11 @@
         %ul.nav.nav-second-level
           %li{class: is_active_controller_and_action('admin/schedules', 'index')}= link_to "一覧", admin_schedules_path
           %li{class: is_active_controller_and_action('admin/schedules', 'new')}= link_to "追加", new_admin_schedule_path
+      %li{class: is_active_controller('admin/records')}
+        %a
+          %i.fa.fa-camera-retro
+          %span.nav-label= t('activerecord.models.record')
+          %span.fa.arrow
+        %ul.nav.nav-second-level
+          %li{class: is_active_controller_and_action('admin/records', 'index')}= link_to "一覧", admin_records_path
+          %li{class: is_active_controller_and_action('admin/records', 'new')}= link_to "追加", new_admin_record_path

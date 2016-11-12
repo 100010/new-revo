@@ -12,4 +12,7 @@ class WelcomeController < ApplicationController
   def link
   end
 
+  def sample
+  end
+
 end

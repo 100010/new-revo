@@ -1,0 +1,11 @@
+= form_for [:admin, @record],  html: {role: 'form', class: "form-horizontal"} do |f|
+  = f.error_messages!
+  .form-group
+    = f.label :title, class: "col-sm-3 control-label"
+    .col-sm-9= f.text_area :title, class: "form-control", required: true
+  .form-group
+    = f.label :image, class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.file_field :image, class: "form-control", size: "2x15", required: true
+  .form-group
+    .col-sm-4.col-sm-offset-3= f.submit "Done", class: "btn btn-primary"

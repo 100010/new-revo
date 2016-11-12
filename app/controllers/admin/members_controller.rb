@@ -40,10 +40,9 @@ class Admin::MembersController < Admin::BaseController
       require(:member).
         permit(
           :name,
-          :year,
           :introduce,
           :depertment,
-          :undergraduate,
+          :profile_image,
           :position
         )
   end

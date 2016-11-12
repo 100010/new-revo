@@ -8,4 +8,6 @@ class Member < ApplicationRecord
   enum undergraduate: Member::AVAILABLE_UNDERGRADUATE_HASH
   enum position: Member::AVAILABLE_POSITION_HASH
 
+  mount_uploader :profile_image, ImageUploader
+
 end

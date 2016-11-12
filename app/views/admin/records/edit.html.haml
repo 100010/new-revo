@@ -1,0 +1,15 @@
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-10
+    %h2 record
+    %ol.breadcrumb
+      %li= link_to "Top", admin_record_path
+      %li.active
+        %strong 編集
+  .col-lg-2
+.wrapper.wrapper-content
+  .row
+    .ibox.float-e-margins
+      .ibox-title
+        %h5 record
+      .ibox-content
+        = render 'form', url: admin_record_path(@record)

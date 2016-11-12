@@ -4,11 +4,20 @@
     = f.label :title, class: "col-sm-3 control-label"
     .col-sm-9= f.text_area :title, class: "form-control", required: true
   .form-group
-    = f.label :month, class: "col-sm-3 control-label"
+    = f.label "予定開始月", class: "col-sm-3 control-label"
     .col-sm-9
-      = f.number_field :month, class: "form-control", required: true
+      = f.number_field :started_month, class: "form-control", required: true
   .form-group
-    = f.label :day, class: "col-sm-3 control-label"
-    .col-sm-9= f.number_field :day, class: "form-control", required: true
+    = f.label "予定終了月", class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.number_field :end_month, class: "form-control", required: true
+  .form-group
+    = f.label "予定開始日", class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.number_field :started_day, class: "form-control", required: true
+  .form-group
+    = f.label "予定終了日", class: "col-sm-3 control-label"
+    .col-sm-9
+      = f.number_field :end_day, class: "form-control", required: true
   .form-group
     .col-sm-4.col-sm-offset-3= f.submit "Done", class: "btn btn-primary"
