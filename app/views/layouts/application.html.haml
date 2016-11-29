@@ -5,5 +5,34 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width , minimum-scale=1, maximum-scale=1", :name => "viewport"}/
+    / links
+    %link#contact-form-7-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.3", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link#wp-pagenavi-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery.js?ver=1.11.2", :type => "text/javascript"}
+    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1", :type => "text/javascript"}
+    :css
+      .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+    / All in One SEO Pack 2.2.4 by Michael Torbert of Semper Fi Web Design[,]
+    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :itemprop => "description", :name => "description"}/
+    %link{:href => "http://reissuerecords.net/page/2/", :rel => "next"}/
+    %link{:href => "http://reissuerecords.net/", :rel => "canonical"}/
+    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:title"}/
+    %meta{:content => "blog", :property => "og:type"}/
+    %meta{:content => "http://reissuerecords.net/", :property => "og:url"}/
+    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :property => "og:image"}/
+    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:site_name"}/
+    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :property => "og:description"}/
+    %meta{:content => "summary", :name => "twitter:card"}/
+    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :name => "twitter:description"}/
+    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :itemprop => "image"}/
+    / /all in one seo pack
+    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,600italic,700italic|Bitter:400,400italic", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/js/common.js"}
   %body
+    = render 'layouts/header'
     = yield
+    = render 'layouts/footer'

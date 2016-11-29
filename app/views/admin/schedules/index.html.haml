@@ -23,7 +23,7 @@
               %tr
                 %td= schedule.id
                 %td= schedule.title
-                %td= schedule.
+                %td #{schedule.started_month}月 #{schedule.started_day}日 - #{schedule.end_month}月 #{schedule.end_day}
                 %td
                   = link_to "編集", edit_admin_schedule_path(schedule), class: "btn btn-white btn-sm"
                   = link_to "削除", admin_schedule_path(schedule), method: :delete, data: { confirm: 'Confirm?' }, class: "btn btn-danger btn-sm"

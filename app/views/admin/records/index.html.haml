@@ -17,6 +17,8 @@
             %tr
               %th id
               %th title
+              %th subtitle
+              %th description
               %th image
               %th created_at
           %tbody
@@ -24,6 +26,8 @@
               %tr
                 %td= record.id
                 %td= record.title
+                %td= record.subtitle
+                %td= record.description
                 %td= image_tag record.image_url
                 %td= record.created_at
                 %td

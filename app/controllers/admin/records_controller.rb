@@ -40,6 +40,8 @@ class Admin::RecordsController  < Admin::BaseController
       require(:record).
         permit(
           :title,
+          :description,
+          :subtitle,
           :image
         )
   end

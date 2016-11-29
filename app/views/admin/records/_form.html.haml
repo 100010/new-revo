@@ -4,6 +4,12 @@
     = f.label :title, class: "col-sm-3 control-label"
     .col-sm-9= f.text_area :title, class: "form-control", required: true
   .form-group
+    = f.label :subtitle, class: "col-sm-3 control-label"
+    .col-sm-9= f.text_field :subtitle, class: "form-control", required: true
+  .form-group
+    = f.label :description, class: "col-sm-3 control-label"
+    .col-sm-9= f.text_field :description, class: "form-control", required: true
+  .form-group
     = f.label :image, class: "col-sm-3 control-label"
     .col-sm-9
       = f.file_field :image, class: "form-control", size: "2x15", required: true

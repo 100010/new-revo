@@ -41,8 +41,10 @@ class Admin::SchedulesController < Admin::BaseController
         require(:schedule).
           permit(
             :title,
-            :month,
-            :day,
+            :started_month,
+            :end_month,
+            :started_day,
+            :end_day
           )
     end
 

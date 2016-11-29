@@ -1,428 +1,66 @@
-!!!
-%html
-  %head
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width , minimum-scale=1, maximum-scale=1", :name => "viewport"}/
-    / links
-    %link#contact-form-7-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.3", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %link#wp-pagenavi-css{:href => "http://reissuerecords.net/rr/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery.js?ver=1.11.2", :type => "text/javascript"}
-    %script{:src => "http://reissuerecords.net/rr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1", :type => "text/javascript"}
-    :css
-      .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
-    / All in One SEO Pack 2.2.4 by Michael Torbert of Semper Fi Web Design[,]
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :itemprop => "description", :name => "description"}/
-    %link{:href => "http://reissuerecords.net/page/2/", :rel => "next"}/
-    %link{:href => "http://reissuerecords.net/", :rel => "canonical"}/
-    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:title"}/
-    %meta{:content => "blog", :property => "og:type"}/
-    %meta{:content => "http://reissuerecords.net/", :property => "og:url"}/
-    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :property => "og:image"}/
-    %meta{:content => "米津玄師 official site「REISSUE RECORDS」", :property => "og:site_name"}/
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :property => "og:description"}/
-    %meta{:content => "summary", :name => "twitter:card"}/
-    %meta{:content => "ハチ（ Hachi ）/ 米津 玄師（Kenshi Yonezu）1991年3月10日生まれ。徳島県出身。作詞・作曲・アレンジ・プログラミング・歌唱・演奏・イラスト・アニメーション。", :name => "twitter:description"}/
-    %meta{:content => "http://reissuerecords.net/rr/wp-content/uploads/loser_APsub.jpg", :itemprop => "image"}/
-    / /all in one seo pack
-    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
-    %link{:href => "http://reissuerecords.net/rr/wp-content/themes/rr/common/css/style.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,600italic,700italic|Bitter:400,400italic", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/js/common.js"}
-    / close.links
-    %title 米津玄師 official site「REISSUE RECORDS」
-    :javascript
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-57997505-1', 'auto');
-      ga('send', 'pageview');
-  %body{"data-dir" => "http://reissuerecords.net/rr/wp-content/themes/rr", "data-uri" => "http://reissuerecords.net"}
-    .all
-      %header
-        .header
-          %ul.nav_left.nav.cf
-            %li
-              %a.p{:href => "http://reissuerecords.net/news/"} NEWS
-            %li
-              %a.p{:href => "http://reissuerecords.net/media/"} MEDIA
-            %li
-              %a.p{:href => "http://reissuerecords.net/live/"} LIVE
-          / .nav_left
-          .rand_wrap_fix
-            %a.p.rand_body.rand_body_show.rand_body_float{:href => "http://reissuerecords.net/"}
-              %span.rand_img
-                %img.image{:alt => "", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters19.png", :width => "83"}/
-          .rand_wrap_bk
-          .header_logo
-            %h1.logo
-              %a.p{:href => "http://reissuerecords.net/"}
-                %img{:alt => "リイシューレコーズ", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/logo.png", :width => "300"}/
-          / .rand_wrap
-          %ul.nav_right.nav.cf
-            %li
-              %a.p{:href => "http://reissuerecords.net/goods/"} GOODS
-            %li
-              %a.p{:href => "http://reissuerecords.net/diary/"} DIARY
-            %li
-              %a.p{:href => "http://reissuerecords.net/contact/"} CONTACT
-            %li
-              %a.p{:href => "http://reissuerecords.net/gallery/"} GALLERY
-            %li
-              %a.p{:href => "http://reissuerecords.net/discography/"} DISCOGRAPHY
-            %li
-              %a.p{:href => "http://reissuerecords.net/profile/"} PROFILE
-          / .nav_right
-          .sns_body
-            %ul.sns
-              %li
-                %a{:href => "https://twitter.com/hachi_08", :target => "_blank"}
-                  %img{:alt => "Twitter", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_1.png", :width => "18"}/
-              %li
-                %a{:href => "https://plus.google.com/u/0/+KenshiYonezuHACHI", :target => "_blank"}
-                  %img{:alt => "GooglePlus", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_2.png", :width => "17"}/
-              %li
-                %a{:href => "https://www.youtube.com/user/08yakari?feature=watch", :target => "_blank"}
-                  %img{:alt => "Youtube", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_3.png", :width => "22"}/
-              %li
-                %a{:href => "http://www.pixiv.net/member.php?id=259546", :target => "_blank"}
-                  %img{:alt => "Pixiv", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_4.png", :width => "17"}/
-              %li
-                %a{:href => "http://www.nicovideo.jp/mylist/30955043", :target => "_blank"}
-                  %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_5.png", :width => "26"}/
-              %li
-                %a{:href => "http://www.nicovideo.jp/mylist/12682175#+sort=1", :target => "_blank"}
-                  %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_6.png", :width => "23.5"}/
-              %li
-                %a{:href => "http://twitcasting.tv/hachi_08", :target => "_blank"}
-                  %img{:alt => "TwiCas", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_9.png", :width => "22"}/
-              %li
-                %a{:href => "http://reissuerecords.net/2016/06/02/米津玄師-line-公式アカウント開設/"}
-                  %img{:alt => "TwiCas", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_11.png", :width => "22"}/
-              %li
-                %a{:href => "http://www.sonymusic.co.jp/artist/kenshiyonezu/", :target => "_blank"}
-                  %img{:alt => "Sony Music", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_black_10.png", :width => "60"}/
-            / .sns
-        / .header
-      #loadbody
-        %section
-          %h1.none NEWS
-          .slider_ol
-            .slider_wrap
-              .slider_body
-                .slider
-                  %a.slider_links.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/dba5768ac08f57a99cab4273a6a220a4.jpg", :href => "http://reissuerecords.net/http://reissuerecords.net/2016/09/27/roj連載「かいじゅうずかん」の書籍化が決定/"}
+#loadbody
+  %section
+    %h1.none NEWS
+    .slider_ol
+      .slider_wrap
+        .slider_body
+          - @records.each do |record|
+            .slider
+              = link_to "", class: "slider_links cover p", "data-src" => "#{record.image_url}" do
+                %article
+                  .slider_info
+                    %p.slider_cat= record.title
+                    %span
+                    %h1= record.subtitle
+                    %span
+                    %h2= record.description
+  %h1.splogo.sp
+    %a{:href => ""}
+      %img{:alt => "リイシューレコーズ", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/logo_wh.png", :width => "300"}/
+  .scrollbk
+    .footer_c_1.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L1.png"}
+    .footer_c_2.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L2.png"}
+    .footer_c_3.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L3.png"}
+    .footer_c_4.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L4.png"}
+    .footer_c_5.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L5.png"}
+  .subcontent.table
+    .subcontent_left.td
+      %section
+        %h1.subcontent_title
+          %p{ style: "font-size: 20px;" } schedule
+        .subcontent_news_body
+          %ul.subcontent_tab1.on
+            - @schedules.each do |schedule|
+              %li.subcontent_news_line
+                %a.p.subcontent_news.rand_wrap{:href => ""}
+                  .subcontent_news_header
                     %article
-                      .slider_info
-                        %p.slider_cat かいじゅうずかん
-                        %span
-                        %h1 米津玄師、初の単行本!!  2016.12.10 発売
-                        %span
-                        %h2 架空のかいじゅうをイラストと文章、音楽で表現したディープワールド！
-                  / .slider_links
-                / .slider
-                .slider
-                  %a.slider_links.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/LOSER_JKT_slyder.jpg", :href => "http://reissuerecords.net/special/loser/"}
-                    %article
-                      .slider_info
-                        %p.slider_cat LOSER / ナンバーナイン
-                        %span
-                        %h1 米津玄師 5th Single
-                        %span
-                        %h2 2016.9.28 RELAESE !!!!
-                  / .slider_links
-                / .slider
-                .slider
-                  %a.slider_links.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/2016TOUR_HOWL_Slyder1.jpg", :href => "http://reissuerecords.net/2016/08/04/米津玄師-2016-tour-はうる　開催決定/"}
-                    %article
-                      .slider_info
-                        %p.slider_cat 米津玄師 2016 TOUR / はうる
-                        %span
-                        %h1 2016.11.23 - 12.8 開催
-                        %span
-                        %h2 東京・大阪・名古屋・仙台
-                  / .slider_links
-                / .slider
-          / .slider_ol
-        %h1.splogo.sp
-          %a{:href => ""}
-            %img{:alt => "リイシューレコーズ", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/logo_wh.png", :width => "300"}/
-        .scrollbk
-          .footer_c_1.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L1.png"}
-          .footer_c_2.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L2.png"}
-          .footer_c_3.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L3.png"}
-          .footer_c_4.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L4.png"}
-          .footer_c_5.cover{"data-src" => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monster_scroll_L5.png"}
-        .subcontent.table
-          .subcontent_left.td
-            %section
-              %h1.subcontent_title
-                %img{:alt => "NEWS", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/title_news.png", :width => "91"}/
-              .subcontent_news_tab
-                %ul
-                  %li
-                    %a.subcontent_tab.on{"data-tgt" => "subcontent_tab1", :href => "#"} NEWS
-                  %li
-                    %a.subcontent_tab{"data-tgt" => "subcontent_tab2", :href => "#"} LIVE
-                  %li
-                    %a.subcontent_tab{"data-tgt" => "subcontent_tab3", :href => "#"} MEDIA
-              / .subcontent_news_header
-              .subcontent_news_body
-                %ul.subcontent_tab1.on
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/10/28/roj%e9%80%a3%e8%bc%89%e3%80%8c%e3%81%8b%e3%81%84%e3%81%98%e3%82%85%e3%81%86%e3%81%9a%e3%81%8b%e3%82%93%e3%80%8d%e3%81%ae%e6%9b%b8%e7%b1%8d%e5%8c%96%e3%81%8c%e6%b1%ba%e5%ae%9a/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 初の単行本「かいじゅうずかん」が12/10に発売決定!
-                          %p
-                            米津玄師、初の単行本「かいじゅうずかん」が12/10に発売決定!
-                            架空のかいじゅうをイ...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "初の単行本「かいじゅうずかん」が12/10に発売決定!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters10.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/08/19/new-single%e3%80%8closer-%e3%83%8a%e3%83%b3%e3%83%90%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%b3%e3%80%8d928%e7%99%ba%e5%a3%b2%e6%b1%ba%e5%ae%9a/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 New Single「LOSER / ナンバーナイン」9/28発売決定!!
-                          %p
-                            【8/4追記】「米津玄師 2016 TOUR /はうる」チケット応募券封入が決定
-                            【8/...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "New Single「LOSER / ナンバーナイン」9/28発売決定!!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters9.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/08/05/%e6%98%a0%e7%94%bb%e3%80%8e%e4%bd%95%e8%80%85%e3%80%8f%e3%81%ae%e4%b8%bb%e9%a1%8c%e6%ad%8c%e3%81%a7%e3%80%81%e4%b8%ad%e7%94%b0%e3%83%a4%e3%82%b9%e3%82%bf%e3%82%ab%e6%b0%8f%e3%81%a8%e5%88%9d%e3%82%b3/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 映画『何者』の主題歌で、中田ヤスタカ×米津玄師  初コラボ!!
-                          %p
-                            「何者」10月15日(土)全国ロードショー
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "映画『何者』の主題歌で、中田ヤスタカ×米津玄師  初コラボ!!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters20.png", :width => "83"}/
-                %ul.subcontent_tab2
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/08/04/%e7%b1%b3%e6%b4%a5%e7%8e%84%e5%b8%ab-2016-tour-%e3%81%af%e3%81%86%e3%82%8b%e3%80%80%e9%96%8b%e5%82%ac%e6%b1%ba%e5%ae%9a/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 米津玄師 2016 TOUR / はうる
-                          %p
-                            11月23日〜12月8日まで、計5公演ワンマンツアー。
-                            【10/15追記】チケット先行　...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "米津玄師 2016 TOUR / はうる", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters4.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/06/23/rock-in-japan-festival-2016-%e5%87%ba%e6%bc%94%e6%b1%ba%e5%ae%9a/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 ROCK IN JAPAN FESTIVAL 2016 出演決定!!
-                          %p
-                            ROCK IN JAPAN FESTIVAL 2016 への出演が決定しました!!
-                            米津...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "ROCK IN JAPAN FESTIVAL 2016 出演決定!!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters17.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/06/15/sweet-love-shower-2016-%e5%87%ba%e6%bc%94/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 SWEET LOVE SHOWER 2016 出演!!
-                          %p
-                            SPACE SHOWER SWEET LOVE SHOWER 2016 出演決定！！
-                            米...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "SWEET LOVE SHOWER 2016 出演!!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters2.png", :width => "83"}/
-                %ul.subcontent_tab3
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/10/01/%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e3%82%b7%e3%83%a3%e3%83%af%e3%83%bctv%e3%80%8c%e7%b1%b3%e6%b4%a5%e7%8e%84%e5%b8%ab-music-video-special%e3%80%8d/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 スペースシャワーTV「米津玄師 MUSIC VIDEO SPECIAL」
-                          %p
-                            初回放送　10/2（日）24:30-25:30
-                            リピート放送　10/23（日）19:...
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "スペースシャワーTV「米津玄師 MUSIC VIDEO SPECIAL」", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters16.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/09/30/%e4%b8%ad%e7%94%b0%e3%83%a4%e3%82%b9%e3%82%bf%e3%82%abx%e7%b1%b3%e6%b4%a5%e7%8e%84%e5%b8%ab%e3%80%81%e3%82%b9%e3%83%9a%e3%82%b7%e3%83%a3%e3%83%ab%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%93%e3%83%a5/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 中田ヤスタカ×米津玄師「何者」スペシャルインタビュー公開！
-                          %p 「ORICON STYLE」「real sound」
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "中田ヤスタカ×米津玄師「何者」スペシャルインタビュー公開！", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters11.png", :width => "83"}/
-                  %li.subcontent_news_line
-                    %a.p.subcontent_news.rand_wrap{:href => "http://reissuerecords.net/2016/09/30/radio-%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88%e5%87%ba%e6%bc%94/"}
-                      .subcontent_news_header
-                        %article
-                          %h1 RADIO コメント出演!!
-                          %p 【NHKラジオ第1】【Date fm（エフエム仙台）】
-                      .rand_body.rand_body_s
-                        %span.rand_img
-                          %img.image{:alt => "RADIO コメント出演!!", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters3.png", :width => "83"}/
-              / .subcontent_news_body
-            .subcontent_middle
-          .subcontent_right.td
-            %section
-              %h1.subcontent_title
-                %img{:alt => "DISCOGRAPHY", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/title_discography.png", :width => "180"}/
-              .subcontent_disco_wrap
-                .subcontent_disco
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/LOSER_JKT.jpg", :href => "http://reissuerecords.net/discography/loser-%e3%83%8a%e3%83%b3%e3%83%90%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%b3/"} LOSER / ナンバーナイン
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/loser-%e3%83%8a%e3%83%b3%e3%83%90%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%b3/"}
-                        %span.rand_img
-                          %img.image{:alt => "LOSER / ナンバーナイン", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters2.png", :width => "83"}/
-                  / .subcontent_disco_body
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/Bremen_JKP.jpg", :href => "http://reissuerecords.net/discography/bremen/"} Bremen
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/bremen/"}
-                        %span.rand_img
-                          %img.image{:alt => "Bremen", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters11.png", :width => "83"}/
-                  / .subcontent_disco_body
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/UNBELIEVERS_JKP1.jpg", :href => "http://reissuerecords.net/discography/%e3%82%a2%e3%83%b3%e3%83%93%e3%83%aa%e3%83%bc%e3%83%90%e3%83%bc%e3%82%ba/"} アンビリーバーズ
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/%e3%82%a2%e3%83%b3%e3%83%93%e3%83%aa%e3%83%bc%e3%83%90%e3%83%bc%e3%82%ba/"}
-                        %span.rand_img
-                          %img.image{:alt => "アンビリーバーズ", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters15.png", :width => "83"}/
-                  / .subcontent_disco_body
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/flowerwall_cover.jpg", :href => "http://reissuerecords.net/discography/flowerwall/"} Flowerwall
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/flowerwall/"}
-                        %span.rand_img
-                          %img.image{:alt => "Flowerwall", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters22.png", :width => "83"}/
-                  / .subcontent_disco_body
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/YANKEE_cover.jpg", :href => "http://reissuerecords.net/discography/yankee/"} YANKEE
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/yankee/"}
-                        %span.rand_img
-                          %img.image{:alt => "YANKEE", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters3.png", :width => "83"}/
-                  / .subcontent_disco_body
-                  .subcontent_disco_body.rand_wrap
-                    %article
-                      %h1
-                        %a.cover.p{"data-src" => "http://reissuerecords.net/rr/wp-content/uploads/MAD_JKP_cover.jpg", :href => "http://reissuerecords.net/discography/mad-head-love-%e3%83%9d%e3%83%83%e3%83%94%e3%83%b3%e3%82%a2%e3%83%91%e3%82%b7%e3%83%bc/"} MAD HEAD LOVE / ポッピンアパシー
-                      %a.rand_body.rand_body_show.p{:href => "http://reissuerecords.net/discography/mad-head-love-%e3%83%9d%e3%83%83%e3%83%94%e3%83%b3%e3%82%a2%e3%83%91%e3%82%b7%e3%83%bc/"}
-                        %span.rand_img
-                          %img.image{:alt => "MAD HEAD LOVE / ポッピンアパシー", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/Monsters7.png", :width => "83"}/
-                  / .subcontent_disco_body
-                .subcontent_disco_control
-                  .subcontent_disco_prev
-                  .subcontent_disco_span
-                  .subcontent_disco_next
-              / .subcontent_disco_wrap
-      / .loadbody
-      %footer
-        .footer
-          .table
-            .td
-              %address © copyright Kenshi Yonezu/REISSUE RECORDS inc. All Right Reserved.
-            .td
-              %ul.sns
-                %li
-                  %a{:href => "https://twitter.com/hachi_08", :target => "_blank"}
-                    %img{:alt => "Twitter", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_1.png", :width => "18"}/
-                %li
-                  %a{:href => "https://plus.google.com/u/0/+KenshiYonezuHACHI", :target => "_blank"}
-                    %img{:alt => "GooglePlus", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_2.png", :width => "17"}/
-                %li
-                  %a{:href => "https://www.youtube.com/user/08yakari?feature=watch", :target => "_blank"}
-                    %img{:alt => "Youtube", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_3.png", :width => "22"}/
-                %li
-                  %a{:href => "http://www.pixiv.net/member.php?id=259546", :target => "_blank"}
-                    %img{:alt => "Pixiv", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_4.png", :width => "17"}/
-                %li
-                  %a{:href => "http://www.nicovideo.jp/mylist/30955043", :target => "_blank"}
-                    %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_5.png", :width => "26"}/
-                %li
-                  %a{:href => "http://www.nicovideo.jp/mylist/12682175#+sort=1", :target => "_blank"}
-                    %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_6.png", :width => "23.5"}/
-                %li
-                  %a{:href => "http://twitcasting.tv/hachi_08", :target => "_blank"}
-                    %img{:alt => "TwiCas", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_8.png", :width => "22"}/
-                %li
-                  %a{:href => "http://reissuerecords.net/2016/06/02/米津玄師-line-公式アカウント開設/"}
-                    %img{:alt => "LINE公式アカウント", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_11.png", :width => "22"}/
-                %li
-                  %a{:href => "http://www.sonymusic.co.jp/artist/kenshiyonezu/", :target => "_blank"}
-                    %img{:alt => "Sony Music", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_10.png", :width => "60"}/
-              / .sns
-        / .footer
-    / .all
-    .toggle.sp
-      %div
-        %span.tg_1
-        %span.tg_2
-        %span.tg_3
-    .sp.spnav
-      %ul
-        %li
-          %a.p{:href => "http://reissuerecords.net/"} HOME
-        %li
-          %a.p{:href => "http://reissuerecords.net/news/"} NEWS
-        %li
-          %a.p{:href => "http://reissuerecords.net/media"} MEDIA
-        %li
-          %a.p{:href => "http://reissuerecords.net/live"} LIVE
-        %li
-          %a.p{:href => "http://reissuerecords.net/contact/"} CONTACT
-        %li
-          %a.p{:href => "http://reissuerecords.net/gallery/"} GALLERY
-        %li
-          %a.p{:href => "http://reissuerecords.net/discography/"} DISCOGRAPHY
-        %li
-          %a.p{:href => "http://reissuerecords.net/profile/"} PROFILE
-        %li
-          %a.p{:href => "http://reissuerecords.net/diary/"} DIARY
-        %li
-          %a.p{:href => "http://reissuerecords.net/goods/"} GOODS
-        %li.spnav_sns
-          %ul
-            %li
-              %a{:href => "https://twitter.com/hachi_08", :target => "_blank"}
-                %img{:alt => "Twitter", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_1.png", :width => "18"}/
-            %li
-              %a{:href => "https://plus.google.com/u/0/+KenshiYonezuHACHI", :target => "_blank"}
-                %img{:alt => "GooglePlus", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_2.png", :width => "17"}/
-            %li
-              %a{:href => "https://www.youtube.com/user/08yakari?feature=watch", :target => "_blank"}
-                %img{:alt => "Youtube", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_3.png", :width => "22"}/
-            %li
-              %a{:href => "http://www.pixiv.net/member.php?id=259546", :target => "_blank"}
-                %img{:alt => "Pixiv", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_4.png", :width => "17"}/
-            %li
-              %a{:href => "http://www.nicovideo.jp/mylist/30955043", :target => "_blank"}
-                %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_5.png", :width => "26"}/
-            %li
-              %a{:href => "http://www.nicovideo.jp/mylist/12682175#+sort=1", :target => "_blank"}
-                %img{:alt => "NikoNiko", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_6.png", :width => "23.5"}/
-            %li
-              %a{:href => "http://twitcasting.tv/hachi_08", :target => "_blank"}
-                %img{:alt => "TwiCas", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_8.png", :width => "22"}/
-            %li
-              %a{:href => "http://reissuerecords.net/2016/06/02/米津玄師-line-公式アカウント開設/"}
-                %img{:alt => "LINE公式アカウント", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_11.png", :width => "22"}/
-            %li
-              %a{:href => "http://www.sonymusic.co.jp/artist/kenshiyonezu/", :target => "_blank"}
-                %img{:alt => "Sony Music", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/icon_sns_white_10.png", :width => "60"}/
-    %script{:src => "http://reissuerecords.net/rr/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20", :type => "text/javascript"}
-    :javascript
-      /* <![CDATA[ */
-      var _wpcf7 = {"loaderUrl":"http:\/\/reissuerecords.net\/rr\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u9001\u4fe1\u4e2d ..."};
-      /* ]]> */
-    %script{:src => "http://reissuerecords.net/rr/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.0.3", :type => "text/javascript"}
+                      %h1= schedule.title
+                      %p #{schedule.started_month}月 #{schedule.started_day}日 - #{schedule.end_month}月 #{schedule.end_day}
+
+      .subcontent_middle
+    .subcontent_right.td
+      %section
+        %h1.subcontent_title
+          %p{ style: "font-size: 20px;" } members
+        .subcontent_disco_wrap
+          .subcontent_disco
+            - @members.each do |member|
+              .subcontent_disco_body.rand_wrap
+                %article
+                  %h1
+                    %a.cover.p{"data-src" => "#{member.profile_image_url}", :href => "http://reissuerecords.net/discography/loser-%e3%83%8a%e3%83%b3%e3%83%90%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%b3/"}
+          .subcontent_disco_control
+            .subcontent_disco_prev
+              %a.bx-prev{:href => ""}
+                .pointer
+                  %img{:alt => "", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/pointer_prev_black.png", :width => "7"}/
+                .bar
+                  %span
+            .subcontent_disco_span
+            .subcontent_disco_next
+              %a.bx-next{:href => ""}
+                .bar
+                  %span
+                .pointer
+                  %img{:alt => "", "data-pin-nopin" => "true", :src => "http://reissuerecords.net/rr/wp-content/themes/rr/common/img/pointer_next_black.png", :width => "7"}/
